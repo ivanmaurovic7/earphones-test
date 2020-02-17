@@ -1477,7 +1477,17 @@ klijenata.</p>			</div>
 <script type="text/javascript">
 	document.getElementById('addToCartButton').addEventListener('click', function() {
 	console.log(1);
-	fbq('track', 'Purchase');
+	  fbq('track', 'Purchase', {
+	    value: 100,
+	    currency: 'euro',
+	    contents: [
+		{
+		    id: '1',
+		    quantity: 1
+		}
+	    ],
+	    content_ids: '1',
+	  });
 	}, false);
 </script>
 <script>var DataLayerOutput = {"event":"pageLoaded","cartContent":{"totals":{"subtotal":0,"subtotal_tax":0,"shipping_total":0,"shipping_tax":0,"discount_total":0,"discount_tax":0,"cart_contents_total":0,"cart_contents_tax":0,"fee_total":0,"fee_tax":0,"total":0,"total_tax":0,"total_with_tax":0,"currency":"EUR","applied_coupons":[]},"criteoProductList":[],"quantity_sum":0,"productSKUs":[],"productSKU_IDs":[],"categories":[]},"PageType":"product","ecomm_pagetype":"product","postID":5951,"userLoggedIn":false,"ecommerce":{"currencyCode":"EUR","detail":{"products":[{"id":"3831121179279","sku":"3831121179279","product_id":5951,"name":"Be\u017ei\u010dne slu\u0161alice za iPhone i Android telefon","price":14.9199999999999999289457264239899814128875732421875,"tax":3.729999999999999982236431605997495353221893310546875,"total":18.660000000000000142108547152020037174224853515625,"category":"gadget30","categories":["Cyber Monday","gadget30"],"stocklevel":null}]},"productSKU_IDs":["3831121179279_5951","3831121180404_5951"]},"ecomm_prodid":"3831121179279","ecomm_totalvalue":14.9199999999999999289457264239899814128875732421875,"criteoViewedProducts":["3831121179279"]}; window.dataLayer.push(DataLayerOutput)</script><script>var additionalData = {"products":{"5951":{"id":"3831121179279","sku":"3831121179279","product_id":5951,"name":"Be\u017ei\u010dne slu\u0161alice za iPhone i Android telefon","price":14.9199999999999999289457264239899814128875732421875,"tax":3.729999999999999982236431605997495353221893310546875,"total":18.660000000000000142108547152020037174224853515625,"category":"gadget30","categories":["Cyber Monday","gadget30"],"stocklevel":null},"299564":{"id":"3831121179279","sku":"3831121179279","product_id":299564,"name":"Be\u017ei\u010dne slu\u0161alice za iPhone i Android telefon","price":14.9199999999999999289457264239899814128875732421875,"tax":3.729999999999999982236431605997495353221893310546875,"total":18.660000000000000142108547152020037174224853515625,"category":"gadget30","categories":["Cyber Monday","gadget30"],"stocklevel":null,"variant":"Bijela"},"299565":{"id":"3831121180404","sku":"3831121180404","product_id":299565,"name":"Be\u017ei\u010dne slu\u0161alice za iPhone i Android telefon","price":14.9199999999999999289457264239899814128875732421875,"tax":3.729999999999999982236431605997495353221893310546875,"total":18.660000000000000142108547152020037174224853515625,"category":"gadget30","categories":["Cyber Monday","gadget30"],"stocklevel":null,"variant":"Crna"}}};</script>            <script type="text/javascript">
